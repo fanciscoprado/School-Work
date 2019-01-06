@@ -1,0 +1,34 @@
+Script started on Mon 29 Jan 2018 04:30:41 PM PST
+[pradof@athena:21]> cat b[Klab1.c
+/*-----------------*/
+/* Francisco Prado */
+/* Section 1       */
+/* Lab1            */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+    printf("\nLab 1 \n\n");
+    printf("Hello World\n");
+    printf("Hi, Francisco Prado\n\n");
+    printf("I. DECLARE. BANKRUPTCY!\n-Michael Scott\n\n");
+    return EXIT_SUCCESS;
+}
+/*-----------------*/
+[pradof@athena:22]> gcc lab1.c
+[pradof@athena:23]> a.out
+
+Lab 1 
+
+Hello World
+Hi, Francisco Prado
+
+I. DECLARE. BANKRUPTCY!
+-Michael Scott
+
+[pradof@athena:24]> exit
+exit
+
+Script done on Mon 29 Jan 2018 04:31:15 PM PST

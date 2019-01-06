@@ -1,0 +1,48 @@
+Francisco Prado 
+Project 1 Questions
+
+1.Who and what did you find helpful for this project?
+        I found videos on youtube by a channel named thenewboston. The videos helped me better understand the java language.
+
+2.How did you test that your stack implementations were correct?
+        The way I tested my implementations was by compiling the code and running the 	program then converting the file back to wav and listen to it.
+
+3.Other than java.util.EmptyStackException, did you use any classes from the Java framework or other class library? (You will get a low score on this project if you use a library to implement your stacks.
+	No the only thing I imported was the EmptyStackExpectation.
+
+4.Your array stacks start with a small array and double in size if they become full. For a .dat file with 1 million lines, how many times would this resizing occur? What about with 1 billion lines or 1 trillion lines (assuming the computer had enough memory)?
+Explain your answer.
+	the array resizes at a rate of 10*2^n n being the number of times the array resizes. If the file where to have 1 million lines the array world resized 17 times since 10*2^17=1,310,700. For a file with 1 million lines it would have to be resized 27 time since 10*2^27 is 1,342,177,280.
+
+5.Instead of a DStack interface, pretend you were given a fully- functional FIFO Queue class. How might you implement this project (i.e., simulate a Stack) with one or more instances of a FIFO Queue?
+	The push wold be simple just push the value to the question. When it comes to pop you would have to travers the whole question to get to the end of the queue and 	get the value. 
+
+6.Write pseudocode for your push and pop operations. Assume your Queue class provides the operations enqueue, dequeue, isEmpty, and size.
+	push()
+	{
+		if(queue is empty)
+		  {
+			push initial value to queue
+		  }
+		else
+	  	  {
+			push value on to queue
+		  }
+	}
+	pop(){
+		if(front.next == null)
+		{
+		  pop queue
+		}
+		else
+		{
+		  popValue = front
+		  while(popvalue.next != null)
+		{
+		  popValue = popValue.next
+		}
+
+7.Why would a stack implementation using a queue, as you described in the previous 		problem, be worse than your array and linked-list stack implementations?
+For the queue in order to pop the value in reverse order once would have to traverse the entire queen every time queue is called. With a stack it would be easier to pop a value because the value that will pop will be on top of the stack and you won't have to go trough the whole stack. An array is also more efficient than the question because with the array to pop you just need to start at the end of the arrays index and work your way down. 
+	        
+
